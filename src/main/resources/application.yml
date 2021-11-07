@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /shingblog-server
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.shingzz.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    lazy-loading-enabled: true
+    aggressive-lazy-loading: false
+spring:
+  profiles:
+    active: dev
